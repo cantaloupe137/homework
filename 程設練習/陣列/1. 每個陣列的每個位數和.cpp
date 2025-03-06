@@ -16,7 +16,7 @@ int sumAllDigit(int n) {
 
 
 int main() {
-	int n, sum1 = 0;
+	int n, ans = 0;
 	cin >> n;
 	
 	//手動配置memory，因為c++不能直接輸入陣列的element
@@ -29,10 +29,10 @@ int main() {
 
 	//加總
 	for (int i = 0; i < n; i++) {
-		sum1 += sumAllDigit(arr[i]);
+		ans += sumAllDigit(arr[i]);
 	}
 	
-	cout << sumAllDigit(sum1);
+	cout << sumAllDigit(ans);
 
 	//因為前面是手動配置的，記得要delete
 	delete[] arr;
