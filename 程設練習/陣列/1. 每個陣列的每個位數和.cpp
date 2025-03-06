@@ -4,6 +4,7 @@ using namespace std;
 
 //處理每個數字的位數和
 int sumAllDigit(int n) {
+	
 	int sum = 0;
 	while (n != 0) {
 		int first = n % 10;
@@ -17,6 +18,7 @@ int sumAllDigit(int n) {
 int main() {
 	int n, sum1 = 0;
 	cin >> n;
+	//手動配置memory
 	int* arr = new int[n];
 
 	//輸入陣列內容
@@ -30,7 +32,8 @@ int main() {
 	}
 	
 	cout << sumAllDigit(sum1);
-	
+
+	//因為前面是手動配置的，記得要delete
 	delete[] arr;
 	return 0;
 }
