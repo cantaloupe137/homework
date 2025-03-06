@@ -1,4 +1,5 @@
-﻿#include<iostream>
+//求一大小為n的整數陣列中，是否有任一元素之值大於3？
+#include<iostream>
 using namespace std;
 
 int main() {
