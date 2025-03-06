@@ -18,7 +18,8 @@ int sumAllDigit(int n) {
 int main() {
 	int n, sum1 = 0;
 	cin >> n;
-	//手動配置memory
+	
+	//手動配置memory，因為c++不能直接輸入陣列的element
 	int* arr = new int[n];
 
 	//輸入陣列內容
