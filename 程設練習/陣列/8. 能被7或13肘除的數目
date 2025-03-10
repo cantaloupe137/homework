@@ -1,0 +1,31 @@
+// 求一大小為n的自然數陣列，可被7或13整除的元素的數目。
+#include <stdio.h>
+#include <stdlib.h>
+
+int count_divided_by_7or13(int n)
+{
+    int count = 0;
+    if (n % 7 == 0 || n % 13 == 0)
+        count++;
+    return count;
+}
+
+int main()
+{
+    int n = 0, ans = 0;
+
+    scanf("%d", &n);
+
+    int *arr = (int *)malloc(n * sizeof(int));
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+        ans += count_divided_by_7or13(arr[i]);
+    }
+
+    printf("%d", ans);
+    free(arr);
+
+    return 0;
+}
