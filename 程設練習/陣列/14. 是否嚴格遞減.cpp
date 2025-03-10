@@ -1,4 +1,4 @@
-﻿//求一大小為n的整數陣列中，所有元素之值是否為遞增？
+﻿//求一大小為n的整數陣列中，所有元素之值是否為嚴格遞減？
 #include<iostream>
 using namespace std;
 int main() {
