@@ -10,6 +10,7 @@ int main() {
 	bool* arr = new bool[n];
 	
 	for (int i = 0; i < n; i++) {
+		cin >> arr[i];
 		arr[i] = true;
 	}
 
