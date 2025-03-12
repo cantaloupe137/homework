@@ -32,5 +32,6 @@ int main()
         printf("%s", "yes");
     else
         printf("%s", "no");
+    free(arr);
     return 0;
 }
