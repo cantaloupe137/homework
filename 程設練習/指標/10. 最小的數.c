@@ -25,5 +25,6 @@ int main()
         scanf("%d", (arr + i));
     }
     printf("%d", smallestNumInArr(arr, n));
+    free(arr);
     return 0;
 }
