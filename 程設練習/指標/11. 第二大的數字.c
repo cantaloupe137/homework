@@ -30,5 +30,6 @@ int main()
         scanf("%d", (arr + i));
     }
     printf("%d", second_biggest(arr, n));
+    free(arr);
     return 0;
 }
