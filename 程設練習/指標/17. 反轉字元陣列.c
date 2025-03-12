@@ -27,5 +27,6 @@ int main()
     {
         printf("%c", *(arr + i));
     }
+    free(arr);
     return 0;
 }
